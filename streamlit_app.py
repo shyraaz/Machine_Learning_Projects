@@ -3,11 +3,7 @@ import pandas as pd
 
 st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide")
 
-st.write("Test video display:")
 
-with open("galaxy.mp4", "rb") as video_file:
-    video_bytes = video_file.read()
-    st.video(video_bytes)
 # 1. CSS للفيديو كـ background
 st.markdown(
     """
@@ -61,15 +57,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# 2. الفيديو كـ background (خارج <style>)
-st.markdown(
-    """
-    <video autoplay loop muted id="bgvid">
-        <source src="galaxy.mp4" type="video/mp4">
-    </video>
-    """,
-    unsafe_allow_html=True
-)
+
 
 # Header
 st.markdown('<div class="big-title">Miladi Code</div>', unsafe_allow_html=True)
