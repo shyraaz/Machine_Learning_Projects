@@ -7,6 +7,7 @@ st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide
 
 # ستايل CSS مخصص للألوان والستايل
 st.markdown(
+    """
     <style>
 
     .stApp {
@@ -31,7 +32,6 @@ st.markdown(
         <source src="galaxy.mp4" type="video/mp4">
     </video>
     
-    unsafe_allow_html=True
 )
     body {
         background: linear-gradient(135deg, #6e4aff 0%, #2d2d5a 100%);
@@ -60,6 +60,8 @@ st.markdown(
         height: 48px;
     }
     </style>
+"""
+unsafe_allow_html=True
 
 # Header
 st.markdown('<div class="big-title">Miladi Code</div>', unsafe_allow_html=True)
