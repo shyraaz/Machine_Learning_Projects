@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide")
-st.write("hi i'am data scientist")
 # ستايل CSS مخصص للألوان والستايل (من غير فيديو)
 st.markdown(
     """
@@ -44,8 +43,8 @@ st.markdown(
 
 
 # Header
-st.markdown('<div class="big-title">Miladi Code</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">Modern Portfolio Website</div>', unsafe_allow_html=True)
+st.markdown('<div class="big-title">Hello I'am a Data Scientist</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">and this is my portfolio</div>', unsafe_allow_html=True)
 
 # Navigation bar (أزرار في صف واحد)
 col1, col2, col3, col4 = st.columns(4)
