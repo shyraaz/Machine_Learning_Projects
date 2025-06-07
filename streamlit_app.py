@@ -8,6 +8,31 @@ st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide
 # ستايل CSS مخصص للألوان والستايل
 st.markdown("""
     <style>
+
+    .stApp {
+        position: relative;
+        overflow: hidden;
+    }
+    #bgvid {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        background-size: cover;
+        object-fit: cover;
+        opacity: 0.7;
+    }
+    </style>
+    <video autoplay loop muted id="bgvid">
+        <source src="background.mp4" type="video/mp4">
+    </video>
+    """,
+    unsafe_allow_html=True
+)
     body {
         background: linear-gradient(135deg, #6e4aff 0%, #2d2d5a 100%);
         color: #fff;
