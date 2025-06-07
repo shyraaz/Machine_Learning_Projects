@@ -29,7 +29,6 @@ st.markdown(
         color: #bdbdfc;
     }
     .section {
-        background: #181830cc;
         border-radius: 18px;
         padding: 2rem;
         margin-bottom: 2rem;
@@ -47,7 +46,7 @@ st.markdown(
 # Navbar عصري بالأزرار (HTML)
 st.markdown("""
 <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 32px;">
-    <a href="#about" style="padding:0px 0px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">About</a>
+    <a href="#about" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">About</a>
     <a href="#skills" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">Skills</a>
     <a href="#projects" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">Projects</a>
     <a href="#contact" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">Contact</a>
