@@ -6,7 +6,7 @@ import pandas as pd
 st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide")
 
 # ستايل CSS مخصص للألوان والستايل
-st.markdown("""
+st.markdown(
     <style>
 
     .stApp {
@@ -26,11 +26,11 @@ st.markdown("""
         object-fit: cover;
         opacity: 0.7;
     }
-    </style>
+    
     <video autoplay loop muted id="bgvid">
         <source src="galaxy.mp4" type="video/mp4">
     </video>
-    """,
+    
     unsafe_allow_html=True
 )
     body {
@@ -60,7 +60,6 @@ st.markdown("""
         height: 48px;
     }
     </style>
-""", unsafe_allow_html=True)
 
 # Header
 st.markdown('<div class="big-title">Miladi Code</div>', unsafe_allow_html=True)
