@@ -27,7 +27,7 @@ st.markdown(
     }
     .subtitle {
         font-size: 1.5rem;
-        color: #bdbdfc;
+        color: #000000;
     }
     .section {
         border-radius: 18px;
