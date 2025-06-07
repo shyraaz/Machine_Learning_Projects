@@ -84,8 +84,7 @@ st.markdown("""
 
 <div class="icon-row">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
-    <img src="https://img.icons8.com/ios-filled/50/4e8cff/artificial-intelligence.png" height="48" title="Machine Learning"/>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"/>
+    <img src="https://img.icons8.com/ios/50/4e8cff/brain--v1.svg" height="48" title="Machine Learning"/>    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"/>
     <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png" height="48"/>
 </div>
 </div>
