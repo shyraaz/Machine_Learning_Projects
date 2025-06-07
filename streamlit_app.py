@@ -61,7 +61,8 @@ st.markdown(
     }
     </style>
 """
-unsafe_allow_html=True
+    unsafe_allow_html=True
+)
 
 # Header
 st.markdown('<div class="big-title">Miladi Code</div>', unsafe_allow_html=True)
