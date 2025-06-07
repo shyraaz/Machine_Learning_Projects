@@ -58,7 +58,7 @@ st.markdown('<div class="big-title" id="about">Hello, There</div>', unsafe_allow
 st.markdown('<div class="big-title">I am a Data Scientist</div>', unsafe_allow_html=True)
 
 # Main Section
-st.markdown('<div class="section">', unsafe_allow_html=True)
+#st.markdown('<div class="section">', unsafe_allow_html=True)
 st.markdown("""
 ### 👋 Hello, There
 **Providing the best Project Experience**
