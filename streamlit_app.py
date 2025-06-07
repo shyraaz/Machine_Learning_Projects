@@ -43,7 +43,7 @@ st.markdown(
 
 
 # Header
-st.markdown('<div class="big-title">Hello I'am a Data Scientist</div>', unsafe_allow_html=True)
+st.markdown('<div class="big-title">Hello I am a Data Scientist</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">and this is my portfolio</div>', unsafe_allow_html=True)
 
 # Navigation bar (أزرار في صف واحد)
