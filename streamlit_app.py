@@ -26,8 +26,8 @@ st.markdown(
         -webkit-text-fill-color: transparent;
     }
     .subtitle {
-        font-size: 1.5rem;
-        color: #000000;
+        font-size: 0.5rem;
+        color: white;
     }
     .section {
         border-radius: 18px;
