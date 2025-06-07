@@ -1,14 +1,13 @@
 import streamlit as st
-import pandas as pd
 
 st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide")
-# ستايل CSS مخصص للألوان والستايل (من غير فيديو)
+
+# ستايل CSS للخلفية فقط (ما نبدلوش لون النص العام)
 st.markdown(
     """
     <style>
     body {
         background: linear-gradient(135deg, #6e4aff 0%, #2d2d5a 100%);
-        color: #fff;
     }
     .big-title {
         font-size: 3.5rem;
@@ -37,36 +36,34 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Navbar عصري بالأزرار (HTML)
+st.markdown("""
+<div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 32px;">
+    <a href="#about" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">About</a>
+    <a href="#skills" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">Skills</a>
+    <a href="#projects" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">Projects</a>
+    <a href="#contact" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">Contact</a>
+</div>
+""", unsafe_allow_html=True)
 
-
-
-
-
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    st.button("About")
-with col2:
-    st.button("Skills")
-with col3:
-    st.button("Projects")
-with col4:
-    st.button("Contact")
-       
-st.markdown('<div class="big-title"> Hello, There </div>', unsafe_allow_html=True)
-st.markdown('<div class="big-title">i am a Data Scientist </div>', unsafe_allow_html=True)
-
-# Navigation bar (أزرار في صف واحد)
-
+# Header
+st.markdown('<div class="big-title" id="about">Hello, There</div>', unsafe_allow_html=True)
+st.markdown('<div class="big-title">I am a Data Scientist</div>', unsafe_allow_html=True)
 
 # Main Section
 st.markdown('<div class="section">', unsafe_allow_html=True)
 st.markdown("""
 ### 👋 Hello, There
+**Providing the best Project Experience**
+
+أنا Front-end developer عندي خبرة في تطوير الويب، الموبايل و البرمجيات. شوف شنوّا نعمل و المهارات متاعي.
+
+[Contact Me](mailto:contact@example.com)
 """)
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Skills Section
-st.markdown('<div class="section">', unsafe_allow_html=True)
+st.markdown('<div class="section" id="skills">', unsafe_allow_html=True)
 st.markdown("""
 ## 🧠 My Skills
 
@@ -86,7 +83,7 @@ st.markdown("""
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Tech Stack Section
-st.markdown('<div class="section">', unsafe_allow_html=True)
+st.markdown('<div class="section" id="projects">', unsafe_allow_html=True)
 st.markdown("""
 ## 🛠️ Tech Stack
 
@@ -99,7 +96,7 @@ st.markdown("""
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Contact Section
-st.markdown('<div class="section">', unsafe_allow_html=True)
+st.markdown('<div class="section" id="contact">', unsafe_allow_html=True)
 st.markdown("""
 ## 📞 Contact
 
