@@ -6,6 +6,14 @@ st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide
 st.markdown(
     """
     <style>
+     /* نخبيو header متاع Streamlit */
+    [data-testid="stHeader"] {
+        display: none;
+    }
+    /* نخبيو الـ toolbar متاع Streamlit Cloud */
+    .st-emotion-cache-18ni7ap {
+        display: none !important;
+    }
     body {
         background: linear-gradient(135deg, #6e4aff 0%, #2d2d5a 100%);
     }
