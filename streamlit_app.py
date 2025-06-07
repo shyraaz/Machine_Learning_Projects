@@ -56,8 +56,7 @@ with col3:
 with col4:
     if st.button("Contact"):
         st.write("📞 هذا القسم متاع Contact")
-st.markdown("""
-### 👋 Hello, There)        
+       
 st.markdown('<div class="big-title"> Hello, There </div>', unsafe_allow_html=True)
 st.markdown('<div class="big-title">i am a Data Scientist </div>', unsafe_allow_html=True)
 
