@@ -57,12 +57,7 @@ st.markdown("""
 # Header
 st.markdown('<div class="big-title" id="about">Hello, There</div>',
             unsafe_allow_html=True)
-st.markdown('<div class="big-title">I am Chiraze Feriani, passionate about data, 
-technology, and creative 
-problem-solving. I love uncovering hidden patterns and transforming numbers
-into real-world solutions. With experience in data analysis, AI, and smart
-project development, Im always eager to learn, grow, and take on 
-new challenges! 🚀</div>', unsafe_allow_html=True)
+st.markdown('<div class="big-title"> 🚀</div>', unsafe_allow_html=True)
 
 # Main Section
 st.markdown('<div class="subtitle"></div>', unsafe_allow_html=True)
