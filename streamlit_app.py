@@ -57,7 +57,7 @@ st.markdown("""
 # Header
 st.markdown('<div class="big-title" id="about">Hello, There</div>',
             unsafe_allow_html=True)
-st.markdown('<div class="big-title"> 
+st.markdown('<div class="big-title" id="about"> 
 I am Chiraze Feriani, passionate about data, 
 technology, and creative 
 problem-solving. I love uncovering hidden patterns and transforming numbers
