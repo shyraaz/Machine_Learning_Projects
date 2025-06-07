@@ -68,12 +68,6 @@ st.markdown('<div class="big-title">i am a Data Scientist </div>', unsafe_allow_
 st.markdown('<div class="section">', unsafe_allow_html=True)
 st.markdown("""
 ### 👋 Hello, There
-
-**Providing the best Project Experience**
-
-أنا Front-end developer عندي خبرة في تطوير الويب، الموبايل و البرمجيات. شوف شنوّا نعمل و المهارات متاعي.
-
-[Contact Me](mailto:contact@example.com)
 """)
 st.markdown('</div>', unsafe_allow_html=True)
 
