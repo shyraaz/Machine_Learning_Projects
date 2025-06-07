@@ -26,7 +26,7 @@ st.markdown(
         -webkit-text-fill-color: transparent;
     }
     .subtitle {
-        font-size: 0.5rem;
+        font-size: 1rem;
         color: white;
     }
     .section {
@@ -58,7 +58,7 @@ st.markdown("""
 st.markdown('<div class="big-title" id="about">Hello, There</div>',
             unsafe_allow_html=True)
 st.markdown("""<div class="subtitle"> 
-I am Chiraze Feriani, passionate about data, 
+I am Chiraze Feriani, a Junior Data Scientist passionate about data, 
 technology, and creative 
 problem-solving. I love uncovering hidden patterns and transforming numbers
 into real-world solutions. With experience in data analysis, AI, and smart
