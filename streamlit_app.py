@@ -75,11 +75,12 @@ st.markdown('<div class="section" id="skills">', unsafe_allow_html=True)
 st.markdown("""
 ## 🧠 My Skills
 
-**Designer 🟦 | Coder 🟧**
+**Data Science
 
-- HTML, CSS, JavaScript
-- Figma, Adobe XD
-- React, Next.js, MySQL
+- Python
+- Machine Learning
+- Deep Learning
+- Streamlit
 
 <div class="icon-row">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
