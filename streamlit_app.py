@@ -28,7 +28,7 @@ st.markdown("""
     }
     </style>
     <video autoplay loop muted id="bgvid">
-        <source src="background.mp4" type="video/mp4">
+        <source src="galaxy.mp4" type="video/mp4">
     </video>
     """,
     unsafe_allow_html=True
