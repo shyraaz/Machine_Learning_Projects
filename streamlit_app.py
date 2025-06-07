@@ -3,6 +3,11 @@ import pandas as pd
 
 st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide")
 
+st.write("Test video display:")
+
+with open("galaxy.mp4", "rb") as video_file:
+    video_bytes = video_file.read()
+    st.video(video_bytes)
 # 1. CSS للفيديو كـ background
 st.markdown(
     """
