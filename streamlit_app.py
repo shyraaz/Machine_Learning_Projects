@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide")
-
+st.write("hi i'am data scientist")
 # ستايل CSS مخصص للألوان والستايل (من غير فيديو)
 st.markdown(
     """
