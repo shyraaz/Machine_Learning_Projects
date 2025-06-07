@@ -43,10 +43,6 @@ st.markdown(
 
 
 # Header
-st.markdown('<div class="big-title">Hello I am a Data Scientist</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">and this is my portfolio</div>', unsafe_allow_html=True)
-
-# Navigation bar (أزرار في صف واحد)
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     if st.button("About"):
@@ -60,6 +56,11 @@ with col3:
 with col4:
     if st.button("Contact"):
         st.write("📞 هذا القسم متاع Contact")
+st.markdown('<div class="big-title">Hello I am a Data Scientist</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">and this is my portfolio</div>', unsafe_allow_html=True)
+
+# Navigation bar (أزرار في صف واحد)
+
 
 # Main Section
 st.markdown('<div class="section">', unsafe_allow_html=True)
