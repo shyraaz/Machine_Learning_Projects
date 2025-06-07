@@ -42,20 +42,15 @@ st.markdown(
 
 
 
-# Header
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    if st.button("About"):
-        st.write("🧑‍💼 هذا القسم متاع About")
+    st.button("About")
 with col2:
-    if st.button("Skills"):
-        st.write("🛠️ هذا القسم متاع Skills")
+    st.button("Skills")
 with col3:
-    if st.button("Projects"):
-        st.write("📚 هذا القسم متاع Projects")
+    st.button("Projects")
 with col4:
-    if st.button("Contact"):
-        st.write("📞 هذا القسم متاع Contact")
+    st.button("Contact")
        
 st.markdown('<div class="big-title"> Hello, There </div>', unsafe_allow_html=True)
 st.markdown('<div class="big-title">i am a Data Scientist </div>', unsafe_allow_html=True)
