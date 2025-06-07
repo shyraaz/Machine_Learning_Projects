@@ -14,9 +14,10 @@ st.markdown(
     .st-emotion-cache-18ni7ap {
         display: none !important;
     }
-    body {
-        background: linear-gradient(135deg, #6e4aff 0%, #2d2d5a 100%);
+    .stApp {
+        background: linear-gradient(135deg, #6e4aff 0%, #2d2d5a 100%) !important;
     }
+    
     .big-title {
         font-size: 3.5rem;
         font-weight: bold;
