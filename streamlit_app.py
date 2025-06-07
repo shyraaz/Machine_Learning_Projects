@@ -59,11 +59,11 @@ st.markdown('<div class="big-title" id="about">Hello, There</div>', unsafe_allow
 st.markdown('<div class="big-title">I am a Data Scientist</div>', unsafe_allow_html=True)
 
 # Main Section
-#st.markdown('<div class="section">', unsafe_allow_html=True)
-I’m Chiraze Feriani, passionate about data, technology, and creative 
+st.markdown('<div class="subtitle">'I’m Chiraze Feriani, passionate about data, technology, and creative 
 problem-solving. I love uncovering hidden patterns and transforming numbers
 into real-world solutions. With experience in data analysis, AI, and smart
-project development, I’m always eager to learn, grow, and take on new challenges! 🚀
+project development, I’m always eager to learn, grow, and take on new challenges! 🚀, unsafe_allow_html=True)
+
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Skills Section
