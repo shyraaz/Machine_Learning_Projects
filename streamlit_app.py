@@ -1,15 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-
-# إعدادات الصفحة
 st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide")
 
-# ستايل CSS مخصص للألوان والستايل
+# 1. CSS للفيديو كـ background
 st.markdown(
     """
     <style>
-
     .stApp {
         position: relative;
         overflow: hidden;
@@ -26,13 +23,8 @@ st.markdown(
         background-size: cover;
         object-fit: cover;
         opacity: 0.7;
+        pointer-events: none;
     }
-    
-    <video autoplay loop muted id="bgvid">
-        <source src="galaxy.mp4" type="video/mp4">
-    </video>
-    
-)
     body {
         background: linear-gradient(135deg, #6e4aff 0%, #2d2d5a 100%);
         color: #fff;
@@ -60,7 +52,17 @@ st.markdown(
         height: 48px;
     }
     </style>
-"""
+    """,
+    unsafe_allow_html=True
+)
+
+# 2. الفيديو كـ background (خارج <style>)
+st.markdown(
+    """
+    <video autoplay loop muted id="bgvid">
+        <source src="galaxy.mp4" type="video/mp4">
+    </video>
+    """,
     unsafe_allow_html=True
 )
 
@@ -68,33 +70,21 @@ st.markdown(
 st.markdown('<div class="big-title">Miladi Code</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Modern Portfolio Website</div>', unsafe_allow_html=True)
 
-# Navigation bar simulation
-nav = st.columns([1,1,1,1])
-with nav[0]:
-    st.markdown("**About**")
-with nav[1]:
-    st.markdown("**Skills**")
-with nav[2]:
-    st.markdown("**Projects**")
-with nav[3]:
-    st.markdown("**Contact**")
+# Navigation bar (أزرار في صف واحد)
 col1, col2, col3, col4 = st.columns(4)
-
 with col1:
     if st.button("About"):
         st.write("🧑‍💼 هذا القسم متاع About")
-
 with col2:
     if st.button("Skills"):
         st.write("🛠️ هذا القسم متاع Skills")
-
 with col3:
     if st.button("Projects"):
         st.write("📚 هذا القسم متاع Projects")
-
 with col4:
     if st.button("Contact"):
         st.write("📞 هذا القسم متاع Contact")
+
 # Main Section
 st.markdown('<div class="section">', unsafe_allow_html=True)
 st.markdown("""
