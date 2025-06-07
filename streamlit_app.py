@@ -51,7 +51,23 @@ with nav[2]:
     st.markdown("**Projects**")
 with nav[3]:
     st.markdown("**Contact**")
+col1, col2, col3, col4 = st.columns(4)
 
+with col1:
+    if st.button("About"):
+        st.write("🧑‍💼 هذا القسم متاع About")
+
+with col2:
+    if st.button("Skills"):
+        st.write("🛠️ هذا القسم متاع Skills")
+
+with col3:
+    if st.button("Projects"):
+        st.write("📚 هذا القسم متاع Projects")
+
+with col4:
+    if st.button("Contact"):
+        st.write("📞 هذا القسم متاع Contact")
 # Main Section
 st.markdown('<div class="section">', unsafe_allow_html=True)
 st.markdown("""
