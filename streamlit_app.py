@@ -3,29 +3,10 @@ import pandas as pd
 
 st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide")
 
-
-# 1. CSS للفيديو كـ background
+# ستايل CSS مخصص للألوان والستايل (من غير فيديو)
 st.markdown(
     """
     <style>
-    .stApp {
-        position: relative;
-        overflow: hidden;
-    }
-    #bgvid {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100vw;
-        min-height: 100vh;
-        width: auto;
-        height: auto;
-        z-index: -1;
-        background-size: cover;
-        object-fit: cover;
-        opacity: 0.7;
-        pointer-events: none;
-    }
     body {
         background: linear-gradient(135deg, #6e4aff 0%, #2d2d5a 100%);
         color: #fff;
@@ -56,6 +37,9 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+
+
 
 
 
