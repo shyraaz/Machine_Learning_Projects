@@ -1,111 +1,116 @@
 import streamlit as st
+from PIL import Image
 
-st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide")
+st.set_page_config(layout="wide", page_title="Chayma Farhat Portfolio", page_icon="✨")
 
-# Custom CSS Styling
-st.markdown("""
-    <style>
-    [data-testid="stHeader"], .st-emotion-cache-18ni7ap {
-        display: none; 
-    }
-    .stApp {
-        background: linear-gradient(135deg, #6e4aff, #2d2d5a) !important;
-        color: white;
-    }
-    .big-title {
-        font-size: 3.5rem;
-        font-weight: bold;
-        background: linear-gradient(90deg, #a18fff, #6e4aff, #00e0ff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 1rem;
-    }
-    .subtitle {
-        font-size: 1.1rem;
-        color: white;
-    }
-    .section {
-        background-color: #ffffff10;
-        border-radius: 16px;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 4px 32px #0002;
-    }
-    .icon-row img {
-        margin: 0 10px;
-        height: 48px;
-    }
-    </style>
-""", unsafe_allow_html=True)
+# === Load Background ===
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background: url('data:image/png;base64,{}') no-repeat center center fixed;
+    background-size: cover;
+}
+</style>
+"""
 
-# Navigation Bar
-st.markdown("""
-<div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 32px;">
-    <a href="#about" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none;">About</a>
-    <a href="#skills" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none;">Skills</a>
-    <a href="#projects" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none;">Projects</a>
-    <a href="#contact" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none;">Contact</a>
-</div>
-""", unsafe_allow_html=True)
+# Convert uploaded image to base64
+import base64
+def get_base64(file_path):
+    with open(file_path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
-# === Introduction Section ===
-st.markdown('<div id="about"></div>', unsafe_allow_html=True)
-col1, col2 = st.columns(2)
+bg_image = get_base64("/mnt/data/eaf994bc-6fa2-4d58-9747-239be1c01d0a.png")
+st.markdown(page_bg_img.format(bg_image), unsafe_allow_html=True)
+
+# === Hero Section ===
+col1, col2 = st.columns([1, 3])
 with col1:
-    st.markdown('<div class="big-title">Hello, I\'m Chiraze Feriani</div>', unsafe_allow_html=True)
+    st.markdown("<h1 style='font-size: 6rem; color: #ff89ff;'>C<br>F</h1>", unsafe_allow_html=True)
+with col2:
     st.markdown("""
-    <div class="subtitle">
-        I am a Junior Data Scientist passionate about data, technology, and creative problem-solving.
-        I love uncovering hidden patterns and transforming numbers into real-world solutions.
-        With experience in data analysis, AI, and smart project development, I'm always eager to learn, grow, and take on new challenges! 🚀
-    </div>
+    ## 👋 Hello! I'm **Chayma Farhat**
+    ### 💻 Full Stack Developer — Crafting Digital Experiences
+    I build innovative web applications with cutting-edge technologies, focusing on **performance**, **accessibility**, and **stunning user experiences**.
+    
+    [👉 View My Work](#featured-projects) | [📬 Get In Touch](#contact)
     """, unsafe_allow_html=True)
 
-with col2:
-    st.image("https://cdn-icons-png.flaticon.com/512/4712/4712107.png", width=300)  # You can change this to any DS-themed image URL
+# === Featured Projects ===
+st.markdown("## 🚀 Featured Projects", unsafe_allow_html=True)
 
-# === Skills Section ===
-st.markdown('<div class="section" id="skills">', unsafe_allow_html=True)
-st.markdown("## 🧠 My Skills")
+projects = [
+    {
+        "title": "CreativAize",
+        "desc": "Unleash your creativity without breaking the bank! Free AI image generation with no limits.",
+        "tags": ["Next.js", "AI", "Image Generation", "Creative Tool"],
+    },
+    {
+        "title": "Co-Bee",
+        "desc": "A gamified education platform where teachers create fun team quizzes and students earn stars.",
+        "tags": ["Next.js", "ShadCN", "Education", "Quiz", "Multiplayer"],
+    },
+    {
+        "title": "First Parc",
+        "desc": "Smart park management app for cities and organizations using Flutter.",
+        "tags": ["Flutter", "Mobile", "Park Management"],
+    },
+]
 
-col1, col2 = st.columns([2, 1])
-with col1:
-    st.markdown("""
-    - **Languages**: Python  
-    - **AI & ML**: Machine Learning, Deep Learning  
-    - **Tools**: Streamlit, TensorFlow  
+for project in projects:
+    st.markdown(f"""
+    ### {project['title']}
+    {project['desc']}
+    **Tech:** {", ".join(project['tags'])}
     """)
-with col2:
-    st.markdown("""
-    <div class="icon-row">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
-        <img src="https://img.icons8.com/ios/50/4e8cff/brain--v1.svg"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"/>
-        <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png"/>
-    </div>
-    """, unsafe_allow_html=True)
-st.markdown("</div>", unsafe_allow_html=True)
 
-# === Projects Section ===
-st.markdown('<div class="section" id="projects">', unsafe_allow_html=True)
-st.markdown("## 🛠️ Tech Stack")
+# === Toolkit Section ===
+st.markdown("## 🧰 My Toolkit")
+
+toolkit = {
+    "Frontend": ["HTML", "CSS3", "Bootstrap", "Angular", "Next.js", "Flutter", "React", "Tailwind CSS"],
+    "Backend": ["Node.js", "ASP.NET Core", "Symfony", "Spring Boot", "REST API", "SOAP API"],
+    "Programming": ["C", "C#", "Java", "Python", "TypeScript", "JavaScript", "Dart", "PHP"],
+    "Data": ["SQL", "PL/SQL", "MongoDB", "Redis", "Firebase", "Hadoop"],
+    "Tools": ["Visual Studio", "VS Code", "Eclipse", "Android Studio", "IntelliJ", "Google Colab", "Power BI"],
+    "Deployment": ["GitHub", "Vercel", "Netlify", "Cloudinary"],
+}
+
+cols = st.columns(3)
+i = 0
+for category, tools in toolkit.items():
+    with cols[i % 3]:
+        st.markdown(f"### {category}")
+        for tool in tools:
+            st.markdown(f"- {tool}")
+    i += 1
+
+# === About Section ===
+st.markdown("## 👩‍💻 Profile: About Me")
 st.markdown("""
-- **Web**: Next.js, HTML5, CSS3, JavaScript
-- **Data**: Pandas, NumPy, Matplotlib
-""")
-st.markdown("</div>", unsafe_allow_html=True)
+I'm a full-stack developer passionate about creating impactful web and mobile applications.  
+I recently completed my degree in **Applied Information Technology**, and I'm excited to dive into projects that push my skills forward.
 
-# === Contact Section with Form ===
-st.markdown('<div class="section" id="contact">', unsafe_allow_html=True)
-st.markdown("## 📞 Contact Me")
+When I'm not coding, you'll find me exploring new technologies, blogging about my experiences, or enhancing my skills through certifications like **Digital Marketing**.
+""")
+
+# === Contact Section ===
+st.markdown('<div id="contact"></div>', unsafe_allow_html=True)
+st.markdown("## 📬 Contact Me")
 
 with st.form("contact_form"):
-    name = st.text_input("Your Name")
-    email = st.text_input("Your Email")
-    message = st.text_area("Your Message")
+    name = st.text_input("Name")
+    email = st.text_input("Email")
+    message = st.text_area("Message")
 
-    submitted = st.form_submit_button("Send Message")
+    submitted = st.form_submit_button("Send")
     if submitted:
-        st.success("Thank you! Your message has been received.")
+        st.success("Thanks! I'll get back to you soon 😊")
 
-st.markdown("</div>", unsafe_allow_html=True)
+# === Footer ===
+st.markdown("---")
+cols = st.columns([1, 4, 1])
+with cols[1]:
+    st.markdown("© 2025 Chayma Farhat. All rights reserved.")
+    st.markdown("[GitHub](https://github.com) | [LinkedIn](https://linkedin.com)")
+
