@@ -6,7 +6,7 @@ def video_base64(file_path):
         data = f.read()
     return base64.b64encode(data).decode()
 
-video_b64 = video_base64("background.mp4")
+video_b64 = video_base64("background.mp4")  
 
 video_html = f"""
 <video autoplay muted loop playsinline
