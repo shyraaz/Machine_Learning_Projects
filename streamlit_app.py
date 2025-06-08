@@ -13,15 +13,7 @@ page_bg_img = """
 </style>
 """
 
-# Convert uploaded image to base64
-import base64
-def get_base64(file_path):
-    with open(file_path, "rb") as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
 
-bg_image = get_base64("/mnt/data/eaf994bc-6fa2-4d58-9747-239be1c01d0a.png")
-st.markdown(page_bg_img.format(bg_image), unsafe_allow_html=True)
 
 # === Hero Section ===
 col1, col2 = st.columns([1, 3])
