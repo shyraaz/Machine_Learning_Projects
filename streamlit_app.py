@@ -6,7 +6,7 @@ st.set_page_config(page_title="Modern Portfolio", page_icon="💻", layout="wide
 st.markdown("""
     <style>
     [data-testid="stHeader"], .st-emotion-cache-18ni7ap {
-        display: none;
+        display: none; 
     }
     .stApp {
         background: linear-gradient(135deg, #6e4aff, #2d2d5a) !important;
