@@ -1,7 +1,7 @@
 import streamlit as st
 import base64
 
-def video_base64(file_path):
+def video_base64(file_path): 
     with open(file_path, "rb") as f:
         data = f.read()
     return base64.b64encode(data).decode()
