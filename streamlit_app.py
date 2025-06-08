@@ -52,7 +52,7 @@ st.markdown("""
     <a href="#projects" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">Projects</a>
     <a href="#contact" style="padding:10px 24px; background:#6e4aff; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">Contact</a>
 </div>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True) 
 
 # Header
 st.markdown('<div class="big-title" id="about">Hello, There</div>',
