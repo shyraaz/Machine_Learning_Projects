@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(layout="wide", page_title="Chayma Farhat Portfolio", page_icon="✨")
+st.set_page_config(layout="wide", page_title="Chiraze Feriani Portfolio", page_icon="✨")
 
 # === Load Background ===
 page_bg_img = """
